@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(38, 107, 168);
+}
+.header{
+    background-color: rgb(203, 170, 38);
+    justify-content: center;
+    height: 80px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+.navbar{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+.header a{
+    text-decoration: none;
+    color:black;
+    margin: 10px;
+    padding: 20px;
+    align-items: center;
+}
+.logo__image{
+    display: inline-flex;
+    cursor: pointer;
+}
+*{
+    box-sizing: border-box;
+    font-weight: 400;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+

@@ -1,0 +1,21 @@
+h1{
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration:underline ;
+    color: darkgreen;
+    text-shadow: 2px 2px black;
+    
+}
+#task{
+    text-align: center;
+    text-transform: capitalize;
+    color:rgb(10, 226, 226) ;
+    text-decoration: underline;
+    text-shadow: 2px 2px black;
+    line-height: 2;
+    white-space: wrap;
+    word-spacing: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+
+}
