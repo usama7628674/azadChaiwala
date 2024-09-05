@@ -1,0 +1,37 @@
+.container {
+    height: 500px;
+    background-color: black;
+    display: flex;
+    padding: 10px;
+    color: azure;
+    align-content: space-between;
+
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+}
+#box1 {
+    background-color: red;
+}
+
+#box2 {
+    background-color: gray;
+}
+
+#box3 {
+    background-color: yellow;
+}
+
+#box4 {
+    background-color: coral;
+}
+
+#box5 {
+    background-color: blue;
+}
+
+#box6 {
+    background-color: orange;
+}
