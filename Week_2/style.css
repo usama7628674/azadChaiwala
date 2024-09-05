@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+.name {
+    font-family:"Roboto Condensed";
+    font-size: large;
+    font-weight: bold;
+}
+
+.learn {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    font-style: italic;
+}
+
+.random {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: smaller;
+    font-style: normal;
+}
+
+div {
+    margin: 20px;
+    padding: 40px;
+    background-color: azure;
+    box-shadow: 20px 20px;
+    border-top-color: blueviolet;
+    border:10px solid red
+}

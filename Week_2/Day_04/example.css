@@ -1,0 +1,52 @@
+.container {
+    height: 500px;
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+}
+
+#box1 {
+    background-color: brown;
+    order: 3;
+}
+
+#box2 {
+    order: -5;
+    align-self: center;
+    background-color: aqua;
+
+}
+
+#box3{
+    order: 1;
+    flex-shrink: 5;
+    flex-basis: 150px;
+    background-color: blueviolet;
+}
+
+#box4{
+    order:4;
+    background-color: yellow;
+
+}
+
+#box5{
+    align-self: center;
+    order:6;
+    flex-grow: 3;
+    background-color: red;
+    
+}
+
+#box6{
+    order:6;
+    background-color: orange;
+    
+}

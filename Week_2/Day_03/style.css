@@ -1,0 +1,32 @@
+.container {
+    background-color: black;
+    height: 200px;
+    position: relative;
+}
+
+.box1 {
+    background-color: aqua;
+    height: 100px;
+    position: absolute;
+    left:20px;
+    top:20px;
+    z-index: 99;    
+}
+
+.box2 {
+    background-color: yellow;
+    height: 100px;
+    position: absolute;
+    left:40px;
+    top:40px;
+    z-index: 1;    
+}
+
+.box3 {
+    background-color: brown;
+    height: 100px;
+    position: absolute;
+    left:60px;
+    top:60px;
+    z-index: 1;    
+}
