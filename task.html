@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <p id="p6"></p>
+    <p id="p7"></p>
+    <p id="p8"></p>
+    <p id="p9"></p>
+
+    <Script>
+        let length = 5
+        let width = 8
+        area = length * width
+
+        document.getElementById('p1').innerHTML = "area of rectangle " + area
+
+        let base = 4
+        let height = 3
+        areatri = (base * height) / 2
+        document.getElementById('p2').innerHTML = "area of trianle is " + areatri
+
+        let radius = 3
+        const pi = 3.14
+        areacircle = pi * (3 * 3)
+        document.getElementById('p3').innerHTML = "area of circle is " + areacircle
+
+        let celsius = 40
+        F = 40 * 1.8 + 32
+        document.getElementById('p4').innerHTML = "Celsius to fahrenheit is " + F
+
+        let Fahrenheit = 50
+        C = (Fahrenheit - 32) / 1.8
+        document.getElementById('p5').innerHTML = "Fahrenheit to celsius is " + C
+
+
+        let num1 = 50
+        let num2 = 30
+        if (num1 == 50) {
+            document.getElementById('p6').innerHTML = "num1 is 50"
+        }
+
+        else if (num1 + num2) {
+            document.getElementById('p6').innerHTML = "sum of num1 and num2 is 50"
+        }
+
+        else {
+            document.getElementById('p6').innerHTML = "Neither the num1 is 50 nor the sum of num1 and num2 is 50"
+        }
+
+
+
+        let int = 4
+        if (int < 0) {
+            document.getElementById('p7').innerHTML = int + " is negative"
+        }
+
+        else {
+            document.getElementById('p7').innerHTML = int + " is positive"
+        }
+
+
+
+
+        let number = 6
+        if (number % 2 == 0) {
+            document.getElementById('p8').innerHTML = number + " is even"
+        }
+
+        else {
+            document.getElementById('p8').innerHTML = number + " is odd"
+        }
+
+
+
+
+        let positivenum = 27
+        multiple = 27 % 3
+
+        if (multiple == 0) {
+            document.getElementById('p9').innerHTML = positivenum + " is multiple of 3"
+        }
+
+        else {
+            document.getElementById('p9').innerHTML = positivenum + " is not multiple of 3"
+        }
+    </Script>
+</body>
+
+</html>
