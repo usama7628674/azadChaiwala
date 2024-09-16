@@ -7,6 +7,7 @@
 </head>
 <body>
     <script>
+        
         let std1 = [
             {
                 name: "usama",
@@ -24,7 +25,7 @@
             }
         ]
 
-        let st2 = [
+        let std2 = [
             {
                 name: "uzair",
                 age: 22,
@@ -40,14 +41,16 @@
                 }
             }
         ]
-        let property = Object.keys(std1)
-        console.log(property)
 
-        console.log(std1.favproglang[0])
-        console.log(std1.favproglang[3])
 
-        console.log(std1.marks[0])
-        console.log(std1.marks[1])
+        // let property = Object.keys(std1[0].name)
+        console.log(Object.keys(std1[0]))
+
+        console.log(std1[0].favproglang[0])
+        console.log(std1[0].favproglang[3])
+
+        console.log(std1[0].marks.Biology)
+        console.log(std1[0].marks.chemistry)
 
         
 
