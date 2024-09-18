@@ -1,32 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
         // Sum all the array elements by using a loop
-        arr = [2,4,6,8]
+        arr = [2, 4, 6, 8]
 
         let sum = 0
-        for(let i=0;i<arr.length;i++)
-        {
+        for (let i = 0; i < arr.length; i++) {
             sum = sum + arr[i]
         }
 
-        console.log("sum is "+sum)
+        console.log("sum is " + sum)
 
         // Reverse the array by using a loop.
 
         revarr = arr.reverse()
-        for (let i=0;i<revarr.length;i++)
-        {
-            console.log("Reverse array is "+revarr[i])
+        for (let i = 0; i < revarr.length; i++) {
+            console.log("Reverse array is " + revarr[i])
         }
+
+        // Make a table of the given number with all possible loops.
+
+        // for loop table
+        for (let a = 1; a <= 10; a++) {
+            console.log(2 * a);
+        }
+
+        // while loop table
+        let counter = 1
+        while (counter <= 10) {
+            console.log(2 * counter)
+            counter++
+        }
+
+        // do while loop table
+
+        let count = 1
+        do {
+            console.log(2 * count)
+            count++
+
+        } while (count <= 10)
+
+        // Find the largest number in an array by using a loop.
+
+        c = [2, 4, 8, 6]
+        let largest = c[0]
+        for (let i = 0; i < c.length; i++) {
+            if (c[i] > largest) {
+                largest = c[i];
+            }
+        }
+        console.log("largest number is " + largest);
+
+        // Find the smallest number in an array by using a loop.
+
+        let smallest = c[0]
+        for (let i = 0; i < c.length; i++) {
+            if (c[i] < smallest) {
+                smallest = c[i];
+            }
+        }
+        console.log("smallest number is " + smallest);
+
+        // Make an array to store the name of 5 students and iterate with for  loop
+
+        std = ['ali', 'hamza', 'usama', 'umar', 'talha']
+        for (let i = 0; i < std.length; i++) {
+            console.log("name of 5 students " + std[i])
+        }
+
+        // Make an object to store the information of a student and iterate with a for-in loop
+        std_obj = {
+            name: "usama",
+            age: 28,
+            regno: 3324,
+            subject: "python"
+        }
+
+        for (let a in std_obj) {
+            console.log("Information of student " + a + " : " + std_obj[a])
+        }
+
     </script>
 
-    
+
 </body>
+
 </html>
