@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Project</title>
+</head>
+
+<body>
+    <script>
+        balance = 0
+        Pin = 0
+
+        function showBalance() {
+            console.log("Balance is ", balance)
+        }
+
+        function withdrawCash(cash) {
+            console.log("Enter the pin to continue")
+            pin = prompt("Enter the pin")
+            if (pin != Pin) {
+                console.log("Pin is incorrect")
+                return
+            }
+            if (balance <= 0) {
+                console.log("Your balance is zero, deposit some cash then widthdraw money")
+                return
+            }
+            balance = balance - cash
+            console.log("Money has been withdrawn")
+        }
+
+        function depositCash(depcash) {
+            console.log("Enter the pin to continue")
+            prompt("Enter the pin")
+            balance = depcash
+            console.log("Money has been deposited")
+        }
+
+        function setPin(pin) {
+            Pin = pin
+            console.log("Pin has been set")
+        }
+
+        function changePin() {
+            pi = prompt("Enter your current pin first")
+            if (pi != Pin) {
+                console.log("Current pin is incorrect")
+                return
+            }
+            else {
+                pi = prompt("Enter a new pin")
+                Pin = pi
+                console.log("New pin has been set")
+            }
+        }
+
+
+        exit = "no"
+        while (exit != "yes") {
+            console.log("1. View account balance")
+            console.log("2. withdraw Cash")
+            console.log("3. Deposit Cash")
+            console.log("4. Set Pin")
+            console.log("5. Change Pin")
+            console.log("6. Exit ATM yes/no")
+
+            input = prompt("Choose your number to select ")
+            if (input == 1) {
+                showBalance()
+            }
+            else if (input == 2) {
+                cash = prompt("Type amount to withdraw")
+                withdrawCash(cash)
+            }
+            else if (input == 3) {
+                depcash = prompt("Enter the amount to deposit")
+                depositCash(depcash)
+            }
+
+            else if (input == 4) {
+                pin = prompt("Enter the pin to set")
+                setPin(pin)
+            }
+
+            else if (input == 5) {
+                changePin()
+            }
+
+            else if (input == "yes")
+                break
+
+        }
+
+    </script>
+</body>
+
+</html>
