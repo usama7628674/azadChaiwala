@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        span {
+            color: red;
+            display: block;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>User Signup</h1>
+    <form action="" id="form_user">
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="">Select a country</option>
+            <option value="USA">United States</option>
+            <option value="Canada">Canada</option>
+        </select>
+        <br>
+
+        <div id="address_fields" class="hidden">
+            <label for="state">State/Province</label>
+            <input type="text" name="state" id="state">
+            <span id="state_error"></span>
+            <br>
+
+            <label for="zipcode">ZIP/Postal Code</label>
+            <input type="text" name="zipcode" id="zipcode">
+            <span id="zipcode_error"></span>
+            <br>
+        </div>
+
+        <hr>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        let form = document.getElementById('form_user');
+        let countrySelect = document.getElementById('country');
+        let addressFields = document.getElementById('address_fields');
+
+        countrySelect.addEventListener('change', function () {
+            if (countrySelect.value === 'USA') {
+                addressFields.classList.remove('hidden');
+                document.querySelector('label for="state').innerText = 'State';
+                document.querySelector('label for="zipcode').innerText = 'ZIP Code';
+            } else if (countrySelect.value === 'Canada') {
+                addressFields.classList.remove('hidden');
+                document.querySelector('label for= state').innerText = 'Province';
+                document.querySelector('label for= zipcode').innerText = 'Postal Code';
+            } else {
+                addressFields.classList.add('hidden');
+            }
+        });
+
+        form.addEventListener('submit', function (e) {
+            console.log('Form Is Submitted');
+        });
+    </script>
+</body>
+
+</html>
